@@ -4,26 +4,23 @@ using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour
 {
+public GameObject Door;
+    public bool isOpen;
 
-    Animator _doorAni;
-
-    private void OnTriggerEnter(Collider other) {
-        _doorAni.SetBool("Open", true);
+    void Update () {
+        if (isOpen == true) {
+            Door.transform.Translate(Vector3.up * Time.deltaTime * 800);
+            //if the bool is true open the door
+            
+        }
+        if (Door.transform.position.y > 30f) {
+            isOpen = false;
+            //if the y of the door is > than 7 we want to stop the door
+        }
     }
+    void OnMouseDown(){ //THIS FUNCTION WILL DETECT THE MOUSE CLICK ON A COLLIDER,IN OUR CASE WILL DETECT THE CLICK ON THE BUTTON
 
-    private void OnTriggerExit(Collider other) {
-        _doorAni.SetBool("Open", false);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        _doorAni = this.transform.parent.GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        isOpen = true;
+        //if we click on the button door we must start to open
     }
 }
