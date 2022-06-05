@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2557061145738208615, guid: 48e1ef64cbf9eff4a9241db4acb03b16, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2557061145738208615, guid: 48e1ef64cbf9eff4a9241db4acb03b16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -325,6 +325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0975a2aaa4f0384783a298db32448dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Door: {fileID: 0}
+  isOpen: 0
 --- !u!1 &209796150 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5177610767144602837, guid: 48e1ef64cbf9eff4a9241db4acb03b16, type: 3}
@@ -370,63 +372,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &847596321
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.37216
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.6743345
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.810319
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 368750540521267533, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1032942817933048823, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
-      propertyPath: m_Name
-      value: Sausage
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
 --- !u!4 &885021155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1093461580693645666, guid: 48e1ef64cbf9eff4a9241db4acb03b16, type: 3}
@@ -441,7 +386,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4523424068717895825, guid: bf25bff2cfdae1c41ac2a02ad429e19c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4523424068717895825, guid: bf25bff2cfdae1c41ac2a02ad429e19c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -502,7 +447,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 353204627044830617, guid: 705774d0231ff014392d759d84f7a8f1, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 353204627044830617, guid: 705774d0231ff014392d759d84f7a8f1, type: 3}
       propertyPath: m_LocalPosition.x
