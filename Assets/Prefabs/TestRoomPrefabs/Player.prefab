@@ -2229,7 +2229,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.5
-  m_Radius: 0.3
+  m_Radius: 0.18
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -2247,7 +2247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7b56c0a5bfec641961d28c812a3ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showController: 1
+  showController: 0
 --- !u!114 &4523424068718245190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2263,9 +2263,9 @@ MonoBehaviour:
   input:
     actionPath: /actions/default/in/TouchPad
     needsReinit: 0
-  rot: {x: 0, y: 0, z: 0, w: 0}
   handPhysics: {fileID: 4563109944411028089}
   speed: 1
+  vrCamera: {fileID: 4523424068718221647}
 --- !u!1 &4523424068718204551
 GameObject:
   m_ObjectHideFlags: 0

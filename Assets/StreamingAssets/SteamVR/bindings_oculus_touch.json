@@ -1,7 +1,7 @@
 {
    "action_manifest_version" : 0,
    "alias_info" : {},
-   "app_key" : "application.generated.unity.vrprojeltdsd.exe",
+   "app_key" : "application.generated.unity.escapethestation.exe",
    "bindings" : {
       "/actions/buggy" : {
          "sources" : [
@@ -212,18 +212,8 @@
                "path" : "/user/hand/right/input/trigger"
             },
             {
-               "inputs" : {
-                  "east" : {
-                     "output" : "/actions/default/in/snapturnright"
-                  },
-                  "west" : {
-                     "output" : "/actions/default/in/snapturnleft"
-                  }
-               },
-               "mode" : "dpad",
-               "parameters" : {
-                  "sub_mode" : "touch"
-               },
+               "inputs" : {},
+               "mode" : "none",
                "path" : "/user/hand/right/input/joystick"
             },
             {
@@ -237,8 +227,14 @@
             },
             {
                "inputs" : {
+                  "east" : {
+                     "output" : "/actions/default/in/snapturnright"
+                  },
                   "north" : {
                      "output" : "/actions/default/in/teleport"
+                  },
+                  "west" : {
+                     "output" : "/actions/default/in/snapturnleft"
                   }
                },
                "mode" : "dpad",
@@ -246,6 +242,24 @@
                   "sub_mode" : "touch"
                },
                "path" : "/user/hand/right/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/stopflight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/stopflight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
             }
          ]
       },
