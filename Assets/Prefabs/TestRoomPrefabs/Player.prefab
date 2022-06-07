@@ -2263,6 +2263,8 @@ MonoBehaviour:
   input:
     actionPath: /actions/default/in/TouchPad
     needsReinit: 0
+  rot: {x: 0, y: 0, z: 0, w: 0}
+  handPhysics: {fileID: 4563109944411028089}
   speed: 1
 --- !u!1 &4523424068718204551
 GameObject:
