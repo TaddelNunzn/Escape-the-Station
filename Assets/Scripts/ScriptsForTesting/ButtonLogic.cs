@@ -8,55 +8,48 @@ public class ButtonLogic : MonoBehaviour
 {
     public GameObject button;
     public UnityEvent onPress;
-    public UnityEvent onRelease;
-    GameObject presser;
-    //AudioSource sound;  sound wird nicht gebraucht gerade
+    //public UnityEvent onRelease;
+    
+    //AudioSource sound; // sound wird nicht gebraucht gerade
     bool isPressed;
 
-    Animator doorAni;
-
+    GameObject presser;
+    public GameObject doorP1;
+    public GameObject doorP2;
+    int i;
 
     void Start()
     {
-        //sound = GetComponent<AudioSource>();
-        isPressed = false;
-        doorAni = this.transform.parent.GetComponent<Animator>();
+        isPressed = false;  
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (!isPressed){
-            button.transform.localPosition = new Vector3(0, -0.005f, 0);
+        button.transform.localPosition = new Vector3(0, -0.005f, 0);
+        if (!isPressed && i == 0 ){
             presser = other.gameObject;
             onPress.Invoke();
             //sound.Play();
-            isPressed = true;  
-            
-
+            isPressed = true;
+            i++;  // damit es nur einmal geht
         }
     }
 
     private void OnTriggerExit(Collider other) {
         if(other.gameObject == presser){
-            button.transform.localPosition = new Vector3(0, 0.0064f, 0);
-            onRelease.Invoke();
+            button.transform.localPosition = new Vector3(0, 0.003f, 0);
             isPressed = false;
-            
         }
     }
 
     public void Something(){
         
-        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        sphere.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        sphere.transform.localPosition = new Vector3(0,1,2);
-        sphere.AddComponent<Rigidbody>(); 
-
+        
+        doorP1.transform.Translate(Vector3.up * Time.deltaTime * 60); //verschiebt die tür
+        doorP2.transform.Translate(Vector3.down * Time.deltaTime * 60);
+        Debug.Log("Button pressed");
+        
     }
 
-    public void Door(){
-        doorAni.SetBool("isOpen", true); 
-
-    }
 
     
 }
