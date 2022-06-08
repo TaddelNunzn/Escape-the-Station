@@ -11,67 +11,63 @@ public class PlayerController : MonoBehaviour
     public SteamVR_Action_Boolean stop;
     public HandPhysics handPhysics;
     [SerializeField] private float speed = 1;
-    private CharacterController characterController;
     public GameObject vrCamera;
-    Vector3 direction = Vector3.zero;
-
-    private Rigidbody rigidbody;
+    public Rigidbody rigidbody;
+    public CapsuleCollider capsule;
+    public CapsuleCollider bodyCollider;
+    public SteamVR_Action_Boolean turnRight;
+    public SteamVR_Action_Boolean turnLeft;
+    public GameObject player;
+    
     
 
-
+    private Transform startTransform;
     private void Start(){
-        characterController = GetComponent<CharacterController>();
-        rigidbody = GetComponent<Rigidbody>();
+        
         
 
-        Valve.VR.OpenVR.Chaperone.ResetZeroPose(ETrackingUniverseOrigin.TrackingUniverseStanding);
         PositionController();
         
     }
 
     // Update is called once per frame
     void Update()
-    {   
-        
-
-        
-        
-        
+    {           
     }
 
     void FixedUpdate(){
-        //PositionController();
+        PositionController();
         MovePlayer();
-        /*if(input.axis.magnitude > 0.1f){
-            Vector3 direction = handPhysics.handCollider.transform.TransformDirection(input.axis.x,0,input.axis.y);
-            characterController.Move(speed * Time.fixedDeltaTime * direction); 
-        }*/
+        
     }
 
 
-    Vector3 currentSpeed;
-    float change = 0.25f;
+    
 
-    bool pressed = false;
 
+
+    //move Player with left stick and stop with buttons
     private void MovePlayer(){   
         if(stop.state) rigidbody.AddForce(-rigidbody.velocity*10);
         else if(input.axis.magnitude > 0.1f){
             Vector3 direction = handPhysics.handCollider.transform.TransformDirection(input.axis.x,0,input.axis.y);
             rigidbody.AddForce(direction);
             
-        }
-        
-        characterController.Move(currentSpeed*Time.fixedDeltaTime*speed);        
+        }       
     }
 
-     //moves capsule with vr camera
+    private void RotatePlayer(){
+        if(turnRight.state){
+            player.transform.localRotation = player.transform.localRotation * Quaternion.Euler(0,90,0);
+        }
+    }
+
+    //moves collision Capsule with capsule that follows Hmd
     private void PositionController()
     {
-        Vector3 hmd = vrCamera.transform.position;
-        Vector3 rig = rigidbody.transform.position;
-        Vector3 diff = hmd - rig;
-        rigidbody.AddForce(diff.x,0,diff.y);
+        capsule.center = bodyCollider.transform.localPosition+ new Vector3(0,0.25f,0);
+        capsule.height = bodyCollider.height+0.25f;
+        //capsule.radius = bodyCollider.radius;        
     }
     
 }
