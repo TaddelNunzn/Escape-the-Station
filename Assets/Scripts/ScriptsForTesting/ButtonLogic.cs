@@ -44,8 +44,8 @@ public class ButtonLogic : MonoBehaviour
     public void Something(){
         
         
-        doorP1.transform.Translate(Vector3.up * Time.deltaTime * 60); //verschiebt die tür
-        doorP2.transform.Translate(Vector3.down * Time.deltaTime * 60);
+        doorP1.transform.Translate(Vector3.up * Time.deltaTime * 180); //verschiebt die tür
+        doorP2.transform.Translate(Vector3.down * Time.deltaTime * 180);
         Debug.Log("Button pressed");
         
     }
