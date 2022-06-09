@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public SteamVR_Action_Boolean turnRight;
     public SteamVR_Action_Boolean turnLeft;
     public GameObject player;
+    public GameObject steamVrObjects;
     
     
 
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate(){
         PositionController();
         MovePlayer();
+        RotatePlayer();
         
     }
 
@@ -56,17 +58,34 @@ public class PlayerController : MonoBehaviour
         }       
     }
 
+    float rotspeed = 0.01f;
+
+    //rotate Player with right Stick
     private void RotatePlayer(){
         if(turnRight.state){
-            player.transform.localRotation = player.transform.localRotation * Quaternion.Euler(0,90,0);
+            //rigidbody.freezeRotation = false;
+            //rigidbody.AddTorque(new Vector3(0,rotspeed,0));
+            rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,45,0);
+            //player.transform.localRotation = player.transform.localRotation * Quaternion.Euler(0,45,0);
+        }
+        else if(turnLeft.state){
+            rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,-45,0);
+            //rigidbody.freezeRotation=false;
+            
+            //rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(0,45,0));
+        }
+        else{
+            rigidbody.freezeRotation = true;
         }
     }
 
     //moves collision Capsule with capsule that follows Hmd
     private void PositionController()
     {
+
         capsule.center = bodyCollider.transform.localPosition+ new Vector3(0,0.25f,0);
         capsule.height = bodyCollider.height+0.25f;
+
         //capsule.radius = bodyCollider.radius;        
     }
     

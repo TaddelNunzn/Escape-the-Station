@@ -985,7 +985,14 @@ MonoBehaviour:
   rigidbody: {fileID: 1933176181}
   capsule: {fileID: 1933176182}
   bodyCollider: {fileID: 4523424068723524821}
-  player: {fileID: 4523424068724703645}
+  turnRight:
+    actionPath: /actions/default/in/SnapTurnRight
+    needsReinit: 0
+  turnLeft:
+    actionPath: /actions/default/in/SnapTurnLeft
+    needsReinit: 0
+  player: {fileID: 4523424068718203113}
+  steamVrObjects: {fileID: 4523424068718201679}
 --- !u!1 &4523424068718200127
 GameObject:
   m_ObjectHideFlags: 0
