@@ -88,6 +88,7 @@ namespace Valve.VR.InteractionSystem
         }
 
 
+
         public bool isDestroying { get; protected set; }
         public bool isHovering { get; protected set; }
         public bool wasHovering { get; protected set; }
@@ -118,6 +119,7 @@ namespace Valve.VR.InteractionSystem
                     useHandObjectAttachmentPoint = false;
                 }
             }
+
         }
 
         protected virtual bool ShouldIgnoreHighlight(Component component)
@@ -309,6 +311,7 @@ namespace Valve.VR.InteractionSystem
                 hand.skeleton.BlendToPoser(skeletonPoser, blendToPoseTime);
             }
 
+            gameObject.layer = 7;
             attachedToHand = hand;
         }
 
@@ -336,6 +339,7 @@ namespace Valve.VR.InteractionSystem
                     hand.skeleton.BlendToSkeleton(releasePoseBlendTime);
             }
 
+            gameObject.layer = 0;
             attachedToHand = null;
         }
 
