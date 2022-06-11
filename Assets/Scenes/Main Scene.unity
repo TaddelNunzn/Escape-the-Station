@@ -212,18 +212,6 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3790680827581393631, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.74999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3790680827581393631, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.74999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3790680827581393631, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.74999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3790680827581393631, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.67
       objectReference: {fileID: 0}
@@ -265,6 +253,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+--- !u!1 &1294305352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159155662924054375, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+  m_PrefabInstance: {fileID: 1294305351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1294305353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5760057706331192405, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+  m_PrefabInstance: {fileID: 1294305351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1294305354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294305352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 978be58a6af8b354d8c3c9664a508bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1294305354}
+        m_TargetAssemblyTypeName: ChangeTexture, Assembly-CSharp
+        m_MethodName: ChangeT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Material1: {fileID: 2100000, guid: 5476ae29e2e50194abce19e5cacce575, type: 2}
+  tochange: {fileID: 1294305353}
 --- !u!1001 &1859065047
 PrefabInstance:
   m_ObjectHideFlags: 0
