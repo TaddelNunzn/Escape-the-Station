@@ -7,9 +7,9 @@ public class ChangeTexture : MonoBehaviour
 {
     public UnityEvent onPress;
     Renderer m_renderer;
-	//public Texture texturePressed;
+	public Texture texturePressed;
 
-    public Material Material1;
+    //public Material Material1;
 
     bool isPressed;
     GameObject presser;
@@ -34,8 +34,8 @@ public class ChangeTexture : MonoBehaviour
 }
 
  public void ChangeT(){
-    tochange.GetComponent<MeshRenderer> ().material = Material1;
-        //m_renderer.material.SetTexture("_MainTex", texturePressed);
+    //tochange.GetComponent<MeshRenderer> ().material = Material1;
+        m_renderer.material.SetTexture("_MainTex", texturePressed);
         Debug.Log("textur geändert");
     }
 
