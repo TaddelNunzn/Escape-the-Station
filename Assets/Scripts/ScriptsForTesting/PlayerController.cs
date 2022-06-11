@@ -23,12 +23,7 @@ public class PlayerController : MonoBehaviour
     
 
     private Transform startTransform;
-    private void Start(){
-        
-        
-
-        PositionController();
-        
+    private void Start(){        
     }
 
     // Update is called once per frame
@@ -50,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
     //move Player with left stick and stop with buttons
     private void MovePlayer(){   
-        if(stop.state) rigidbody.AddForce(-rigidbody.velocity*10);
+        if(stop.state) rigidbody.AddForce(-rigidbody.velocity*5);
         else if(input.axis.magnitude > 0.1f){
             Vector3 direction = handPhysics.handCollider.transform.TransformDirection(input.axis.x,0,input.axis.y);
             rigidbody.AddForce(direction);
@@ -58,18 +53,15 @@ public class PlayerController : MonoBehaviour
         }       
     }
 
-    float rotspeed = 0.01f;
+    
 
     //rotate Player with right Stick
     private void RotatePlayer(){
-        if(turnRight.state){
-            //rigidbody.freezeRotation = false;
-            //rigidbody.AddTorque(new Vector3(0,rotspeed,0));
-            rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,45,0);
-            //player.transform.localRotation = player.transform.localRotation * Quaternion.Euler(0,45,0);
+        if(turnRight.stateDown){
+            rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,30,0);
         }
-        else if(turnLeft.state){
-            rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,-45,0);
+        else if(turnLeft.stateDown){
+            rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,-30,0);
             //rigidbody.freezeRotation=false;
             
             //rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(0,45,0));
