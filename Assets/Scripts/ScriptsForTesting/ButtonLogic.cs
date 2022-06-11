@@ -41,7 +41,7 @@ public class ButtonLogic : MonoBehaviour
         }
     }
 
-    public void Something(){
+    public void OpenDoor(){
         
         
         doorP1.transform.Translate(Vector3.up * Time.deltaTime * 180); //verschiebt die tür
