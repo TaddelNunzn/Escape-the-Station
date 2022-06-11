@@ -7,6 +7,7 @@ public class ChangeTexture : MonoBehaviour
 {
 
 
+    bool wait = false;
     static bool doupdates = true;
     static bool finished = false;
     static int count = 0;
@@ -39,15 +40,20 @@ public class ChangeTexture : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(!finished){
+        if(!finished && !wait){
         presser = other.gameObject;
         onPress.Invoke();
+        wait = true;
+        Invoke("setwait", 0.5f);
         //sound.Play();
         }
 
 
 }
 
+void setwait(){
+    wait = false;
+}
 void stopupdates(){
     doupdates = false;
     Debug.Log("i stopped");
