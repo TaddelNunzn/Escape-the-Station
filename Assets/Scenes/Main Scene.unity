@@ -123,6 +123,94 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &51589762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6463719203286288128, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+  m_PrefabInstance: {fileID: 1294305351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &291605980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6028570088757315421, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+  m_PrefabInstance: {fileID: 1294305351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &508794008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 887271344487236719, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+  m_PrefabInstance: {fileID: 1294305351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &508794013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508794008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 978be58a6af8b354d8c3c9664a508bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 508794013}
+        m_TargetAssemblyTypeName: ChangeTexture, Assembly-CSharp
+        m_MethodName: ChangeT1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  texturePressed: {fileID: 2800000, guid: 2e2333c960274e741a36e9f3cc903039, type: 3}
+  texturePressed2: {fileID: 2800000, guid: e183aa09c01ee5b49b32b70535924240, type: 3}
+  texturePressed3: {fileID: 2800000, guid: 298751e2d47c6fc4dabd5e865463c5f5, type: 3}
+  texturePressed4: {fileID: 2800000, guid: 7b98260aedcf3b0438023520105fd422, type: 3}
+  texturePressed5: {fileID: 2800000, guid: 26d4d63e94c354a478b2fe05bb112302, type: 3}
+  finishtexture: {fileID: 2800000, guid: f33ccd07f9433f44f8c5430938b168ac, type: 3}
+  tochange: {fileID: 291605980}
+--- !u!1 &511792099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 453260776529413170, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+  m_PrefabInstance: {fileID: 1294305351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &511792104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511792099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 978be58a6af8b354d8c3c9664a508bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 511792104}
+        m_TargetAssemblyTypeName: ChangeTexture, Assembly-CSharp
+        m_MethodName: ChangeT3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  texturePressed: {fileID: 2800000, guid: 2e2333c960274e741a36e9f3cc903039, type: 3}
+  texturePressed2: {fileID: 2800000, guid: e183aa09c01ee5b49b32b70535924240, type: 3}
+  texturePressed3: {fileID: 2800000, guid: 298751e2d47c6fc4dabd5e865463c5f5, type: 3}
+  texturePressed4: {fileID: 2800000, guid: 7b98260aedcf3b0438023520105fd422, type: 3}
+  texturePressed5: {fileID: 2800000, guid: 26d4d63e94c354a478b2fe05bb112302, type: 3}
+  finishtexture: {fileID: 2800000, guid: f33ccd07f9433f44f8c5430938b168ac, type: 3}
+  tochange: {fileID: 51589762}
 --- !u!1001 &1294305351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -178,7 +266,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5632533166449764037, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+    - {fileID: 6374472245163007376, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+    - {fileID: 5939362164504255949, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
 --- !u!1 &1294305352 stripped
 GameObject:
@@ -207,7 +298,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1294305354}
         m_TargetAssemblyTypeName: ChangeTexture, Assembly-CSharp
-        m_MethodName: ChangeT
+        m_MethodName: ChangeT2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -218,6 +309,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   texturePressed: {fileID: 2800000, guid: 2e2333c960274e741a36e9f3cc903039, type: 3}
+  texturePressed2: {fileID: 2800000, guid: e183aa09c01ee5b49b32b70535924240, type: 3}
+  texturePressed3: {fileID: 2800000, guid: 298751e2d47c6fc4dabd5e865463c5f5, type: 3}
+  texturePressed4: {fileID: 2800000, guid: 7b98260aedcf3b0438023520105fd422, type: 3}
+  texturePressed5: {fileID: 2800000, guid: 26d4d63e94c354a478b2fe05bb112302, type: 3}
+  finishtexture: {fileID: 2800000, guid: f33ccd07f9433f44f8c5430938b168ac, type: 3}
   tochange: {fileID: 1294305353}
 --- !u!1001 &1859065047
 PrefabInstance:
