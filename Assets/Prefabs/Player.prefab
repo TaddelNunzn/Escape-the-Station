@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4523966724397407375}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ObjectAttachmentPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4523966723092792347}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: HoverPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4523424068724687499}
   - component: {fileID: 4563109944487695061}
   - component: {fileID: 4563109944411028089}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 4523424068724769301}
   - component: {fileID: 4563109944105652055}
   - component: {fileID: 4563110001254763103}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4523424068717869775}
   - component: {fileID: 4523424068724610675}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ControllerButtonHints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4523424068717896823}
   - component: {fileID: 4523424068724619835}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ControllerButtonHints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -815,7 +815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4523424068717797875}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: HoverPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4523424068717891689}
   - component: {fileID: 4523424068724709351}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ControllerHoverHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 4523424068724719219}
   - component: {fileID: 4523424068714936525}
   - component: {fileID: 1543452676}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: BodyCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1131,7 +1131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4523424068717895825}
   - component: {fileID: 4523424068724703645}
-  - component: {fileID: 4523424068718245189}
   - component: {fileID: 1933176181}
   - component: {fileID: 1933176182}
   m_Layer: 8
@@ -1190,19 +1189,6 @@ MonoBehaviour:
     actionPath: /actions/default/in/HeadsetOnHead
     needsReinit: 0
   allowToggleTo2D: 1
---- !u!114 &4523424068718245189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4523424068718203113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d7b56c0a5bfec641961d28c812a3ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showController: 0
 --- !u!54 &1933176181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1510,7 +1496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4523424068717793121}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ObjectAttachmentPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1542,7 +1528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4523424068717820523}
   - component: {fileID: 4523424068724670231}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ControllerHoverHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
