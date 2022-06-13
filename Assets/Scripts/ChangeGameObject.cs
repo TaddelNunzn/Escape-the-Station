@@ -26,6 +26,8 @@ public class ChangeGameObject : MonoBehaviour
      {
         ChangePrefabs();
      }
+
+     
      void ChangePrefabs(){
         //Alte prefabs auf inactive setzen
         for(int i=0; i<prefabold.Length; i++){
