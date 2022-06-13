@@ -23,13 +23,14 @@ public class LichtRätzel : MonoBehaviour
     public GameObject light4;
     public GameObject light5;
 
-    int i;
+    
     
     static bool on1 = false;
     static bool on2 = false;
     static bool on3 = false;
     static bool on4 = false;
     static bool on5 = false;
+    int tmp = 0;
 
 
     void Start()
@@ -44,7 +45,7 @@ public class LichtRätzel : MonoBehaviour
             onPress.Invoke();
             //sound.Play();
             isPressed = true;
-            i++;  // damit es nur einmal geht
+            
         }
     }
 
@@ -55,68 +56,143 @@ public class LichtRätzel : MonoBehaviour
         }
     }
 
-    public void Logic1(){
 
-    if(on1){
-        light1.GetComponent<MeshRenderer> ().material = Material2;
-        on1 = false;
-    }else{
-        light1.GetComponent<MeshRenderer> ().material = Material1;
-        on1 = true;
+//if anweisungen für die Logic
+    public void Lights1u2(){
+        if(on1){
+            light1.GetComponent<MeshRenderer> ().material = Material2;
+            on1 = false;
+        }else{
+            light1.GetComponent<MeshRenderer> ().material = Material1;
+            on1 = true;
+        }
+
+        if(on2){
+            light2.GetComponent<MeshRenderer> ().material = Material2;
+            on2 = false;
+        }else{
+            light2.GetComponent<MeshRenderer> ().material = Material1;
+            on2 = true;
+        }
+
     }
 
-    if(on2){
-        light2.GetComponent<MeshRenderer> ().material = Material2;
-        on2 = false;
-    }else{
-        light2.GetComponent<MeshRenderer> ().material = Material1;
-        on2 = true;
+    public void Lights3u5(){
+        if(on3){
+            light3.GetComponent<MeshRenderer> ().material = Material2;
+            on3 = false;
+        }else{
+            light3.GetComponent<MeshRenderer> ().material = Material1;
+            on3 = true;
+        }
+
+        if(on5){
+            light5.GetComponent<MeshRenderer> ().material = Material2;
+            on5 = false;
+        }else{
+            light5.GetComponent<MeshRenderer> ().material = Material1;
+            on5 = true;
+        }
     }
-     
-}
+
+    public void Lights2u3(){
+        if(on2){
+            light2.GetComponent<MeshRenderer> ().material = Material2;
+            on2 = false;
+        }else{
+            light2.GetComponent<MeshRenderer> ().material = Material1;
+            on2 = true;
+        }
+
+        if(on3){
+            light3.GetComponent<MeshRenderer> ().material = Material2;
+            on3 = false;
+        }else{
+            light3.GetComponent<MeshRenderer> ().material = Material1;
+            on3 = true;
+        }
+
+    }
+
+    public void Lights4u5(){    
+        if(on4){
+            light4.GetComponent<MeshRenderer> ().material = Material2;
+            on4 = false;
+        }else{
+            light4.GetComponent<MeshRenderer> ().material = Material1;
+            on4 = true;
+        }
+
+        if(on5){
+            light5.GetComponent<MeshRenderer> ().material = Material2;
+            on5 = false;
+        }else{
+            light5.GetComponent<MeshRenderer> ().material = Material1;
+            on5 = true;
+        }
+    }
+
+    public void Lights1u3u5(){
+        if(on1){
+            light1.GetComponent<MeshRenderer> ().material = Material2;
+            on1 = false;
+        }else{
+            light1.GetComponent<MeshRenderer> ().material = Material1;
+            on1 = true;
+        }
+
+        if(on3){
+            light3.GetComponent<MeshRenderer> ().material = Material2;
+            on3 = false;
+        }else{
+            light3.GetComponent<MeshRenderer> ().material = Material1;
+            on3 = true;
+        }
+
+        if(on5){
+            light5.GetComponent<MeshRenderer> ().material = Material2;
+            on5 = false;
+        }else{
+            light5.GetComponent<MeshRenderer> ().material = Material1;
+            on5 = true;
+        }
+    }
+
+
+//anwendung von verschiedenen mustern
+    public void Logic1(){ 
+        if(tmp == 0){
+            tmp++;
+            Lights1u2();
+            
+            Debug.Log(tmp);
+        }else if(tmp==1){
+            tmp--;
+            Lights3u5();
+            Debug.Log(tmp);
+        }         
+    }
 
     public void Logic2(){
-    
-    if(on3){
-        light3.GetComponent<MeshRenderer> ().material = Material2;
-        on3 = false;
-    }else{
-        light3.GetComponent<MeshRenderer> ().material = Material1;
-        on3 = true;
-    }
-
-    if(on4){
-        light4.GetComponent<MeshRenderer> ().material = Material2;
-        on4 = false;
-    }else{
-        light4.GetComponent<MeshRenderer> ().material = Material1;
-        on4 = true;
-    }
-
- 
-       
+        if(tmp == 0){
+            tmp++;
+            Lights2u3();
+            
+        }else if(tmp==1){
+            tmp--;
+            Lights4u5();
+        }
     }
 
     public void Logic3(){
-    
-        
-    if(on5){
-        light5.GetComponent<MeshRenderer> ().material = Material2;
-        on5 = false;
-    }else{
-        light5.GetComponent<MeshRenderer> ().material = Material1;
-        on5 = true;
-    }
+        if(tmp == 0){
+            tmp++;
+            Lights1u3u5();
 
-    /*if(on3){
-        light3.GetComponent<MeshRenderer> ().material = Material2;
-        on3 = false;
-    }else{
-        light3.GetComponent<MeshRenderer> ().material = Material1;
-        on3 = true;
-    }*/
- 
-        
+        }else if(tmp==1){
+            tmp--;
+            Lights4u5();
+        }  
     }
 
 
@@ -124,12 +200,11 @@ public class LichtRätzel : MonoBehaviour
     void Update() {
 
         if(on1 && on2 && on3 && on4 && on5){
-            Debug.Log("Magic");
-            on1 = false;
+            tmp = 4;
         }
-
-        
     }
+
+    
  }
 
 
