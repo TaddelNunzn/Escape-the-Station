@@ -19,7 +19,7 @@ public class ChangeTexture : MonoBehaviour
     public Texture texturePressed3;
     public Texture texturePressed4;
     public Texture texturePressed5;
-     public Texture finishtexture;
+    public Texture finishtexture;
 
 
     GameObject presser;
@@ -31,12 +31,12 @@ public class ChangeTexture : MonoBehaviour
     }
 
     void Update(){
-    if(count == 2140 && doupdates){
-    m_renderer.material.SetTexture("_MainTex", finishtexture);
-    finished = true;
-    Debug.Log("i update");
-    Invoke("stopupdates", 0.01f);
-    }
+        if(count == 2140 && doupdates){
+            m_renderer.material.SetTexture("_MainTex", finishtexture);
+            finished = true;
+            Debug.Log("i update");
+            Invoke("stopupdates", 0.01f);
+        }
     }
 
     private void OnTriggerEnter(Collider other) {
