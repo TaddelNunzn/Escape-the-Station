@@ -12,6 +12,7 @@ public class ButtonLogic : MonoBehaviour
     
     //AudioSource sound; // sound wird nicht gebraucht gerade
     bool isPressed;
+    static bool open;
 
     GameObject presser;
     public GameObject doorP1;
@@ -20,6 +21,7 @@ public class ButtonLogic : MonoBehaviour
 
     void Start()
     {
+        open = false;
         isPressed = false;  
     }
 
@@ -43,14 +45,25 @@ public class ButtonLogic : MonoBehaviour
 
     public void OpenDoor(){
         
-        
-        doorP1.transform.Translate(Vector3.up * Time.deltaTime * 180); //verschiebt die tür
-        doorP2.transform.Translate(Vector3.down * Time.deltaTime * 180);
-        Debug.Log("Button pressed");
+        open = true;
         
     }
 
-   
+    void Update() {
+
+
+        if(open){
+            doorP1.transform.Translate(Vector3.up * Time.deltaTime * 1); //verschiebt die tür
+            doorP2.transform.Translate(Vector3.down * Time.deltaTime * 1);
+        }
+
+        if(doorP1.transform.position.y > 8f){
+            open = false;
+        }
+
+
+        
+    }
 
     
 }
