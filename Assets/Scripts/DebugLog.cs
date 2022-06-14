@@ -9,6 +9,7 @@ public class DebugLog : MonoBehaviour
 {
    
     public UnityEvent onPress;
+    public AudioSource audio;
 
    private void OnTriggerEnter(Collider other) {
         onPress.Invoke();
@@ -17,6 +18,6 @@ public class DebugLog : MonoBehaviour
    
 
     public void debuglog(){
-        Debug.Log("I've been pressed");
+        audio.Play();
     }
 }
