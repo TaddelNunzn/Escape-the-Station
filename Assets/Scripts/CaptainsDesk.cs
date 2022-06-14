@@ -17,13 +17,12 @@ public class CaptainsDesk : MonoBehaviour
     void Start()
     {
         ChangeScreens();
-
     }
 
     void ChangeScreens(){
         if(!isOpen){
-            leftScreen.texture = renderTextures[Random.Range(0,3)];
-            rightScreen.texture = renderTextures[Random.Range(0,3)];
+            leftScreen.texture = renderTextures[Random.Range(0,renderTextures.Length-2)];
+            rightScreen.texture = renderTextures[Random.Range(0,renderTextures.Length-2)];
             Invoke("ChangeScreens",10);
         }
     }
@@ -31,7 +30,7 @@ public class CaptainsDesk : MonoBehaviour
     public void OpenEscapePod(){
         if(!isOpen){
             button.text = "Escape Pod\nOpened";
-            //image.color = new Color32(07C100);
+            image.color = new Color32(7,193,0,255);
             isOpen = true;
             leftScreen.texture = renderTextures[4];
             rightScreen.texture = renderTextures[4];

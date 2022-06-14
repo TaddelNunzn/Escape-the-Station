@@ -17,15 +17,15 @@ public class CameraTable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Set Middlescreen to firs Camera
+        //Set Middlescreen to first Camera
         screen.texture = renderTextures[tmp];
     }
 
     //Called when specific button is Pressed
     public void ChangeScreen(int direction){
         //set active camera +1 or -1;
-        tmp = (tmp + direction)%4;
-        if(tmp < 0) tmp += 4;
+        tmp = (tmp + direction)%renderTextures.Length;
+        if(tmp < 0) tmp += renderTextures.Length;
         //change Middlescreen to active Camera
         screen.texture = renderTextures[tmp];
     }
