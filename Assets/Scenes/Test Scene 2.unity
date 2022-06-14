@@ -178,8 +178,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1189169688, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.004277939
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478087010738810937, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0058327504
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367354200265470199, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367354200265470199, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1626989233}
+    - target: {fileID: 8367354200265470199, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenEscapePod
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367354200265470199, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CaptainsDesk, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+--- !u!114 &353149849 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1189169689, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+  m_PrefabInstance: {fileID: 95645228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &516756799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5295330643037261639, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+  m_PrefabInstance: {fileID: 95645228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &906557688
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +534,57 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580ab67fd3309f049aa1a49790788402, type: 3}
+--- !u!1 &1626989232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 153876, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+  m_PrefabInstance: {fileID: 95645228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1626989233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626989232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ddb0fd3018eb04f9fe3a2a6ab25b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderTextures:
+  - {fileID: 8400000, guid: e9dcbcfbb500d5342a21c9e98a2820bd, type: 2}
+  - {fileID: 8400000, guid: 74f8a994abd646946b75bb3b56c27467, type: 2}
+  - {fileID: 8400000, guid: 7a6cb115c99183749b135f4bd9b13a98, type: 2}
+  - {fileID: 8400000, guid: 24df4966462080245a22c5ebe0e5d8c2, type: 2}
+  button: {fileID: 1765879358}
+  leftScreen: {fileID: 353149849}
+  rightScreen: {fileID: 516756799}
+  solved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1626989233}
+        m_TargetAssemblyTypeName: CaptainsDesk, Assembly-CSharp
+        m_MethodName: isSolved
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1765879358 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7863950972198367992, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+  m_PrefabInstance: {fileID: 95645228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1854353642
 PrefabInstance:
   m_ObjectHideFlags: 0

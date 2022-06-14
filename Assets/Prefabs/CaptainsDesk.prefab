@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3358696}
   - component: {fileID: 2345042}
   - component: {fileID: 6409752}
+  - component: {fileID: 1626989233}
   m_Layer: 0
   m_Name: CaptainsDesk
   m_TagString: Untagged
@@ -34,6 +35,7 @@ Transform:
   - {fileID: 1784012877}
   - {fileID: 1349737180}
   - {fileID: 32748036}
+  - {fileID: 1934905367}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,6 +104,42 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a0d8f320763fe4945b863868635a92f5, type: 3}
+--- !u!114 &1626989233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ddb0fd3018eb04f9fe3a2a6ab25b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderTextures:
+  - {fileID: 8400000, guid: e9dcbcfbb500d5342a21c9e98a2820bd, type: 2}
+  - {fileID: 8400000, guid: 74f8a994abd646946b75bb3b56c27467, type: 2}
+  - {fileID: 8400000, guid: 7a6cb115c99183749b135f4bd9b13a98, type: 2}
+  - {fileID: 8400000, guid: 24df4966462080245a22c5ebe0e5d8c2, type: 2}
+  - {fileID: 8400000, guid: 5b1005dc1e17fb443bb6918476a9699f, type: 2}
+  button: {fileID: 7863950972198367992}
+  leftScreen: {fileID: 1189169689}
+  rightScreen: {fileID: 5295330643037261639}
+  solved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1626989233}
+        m_TargetAssemblyTypeName: CaptainsDesk, Assembly-CSharp
+        m_MethodName: isSolved
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &32748035
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +367,7 @@ RectTransform:
   m_GameObject: {fileID: 1189169687}
   m_LocalRotation: {x: 0.011671897, y: -0.0035365808, z: -0.004685594, w: 0.99991465}
   m_LocalPosition: {x: 0, y: 0, z: -0.9}
-  m_LocalScale: {x: 0.027349394, y: 0.0044980273, z: 0.026875539}
+  m_LocalScale: {x: 0.027349394, y: 0.004277939, z: 0.026875539}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 384448349}
@@ -674,6 +712,90 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1934905366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934905367}
+  - component: {fileID: 1934905369}
+  - component: {fileID: 1934905368}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934905367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934905366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 445452}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1934905369
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934905366}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: 5b1005dc1e17fb443bb6918476a9699f, type: 2}
+  m_TargetDisplay: 6
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &1934905368
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934905366}
+  m_Enabled: 1
 --- !u!1 &2123271884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,10 +1141,10 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraTable, Assembly-CSharp
-        m_MethodName: ChangeScreen
-        m_Mode: 3
+      - m_Target: {fileID: 1626989233}
+        m_TargetAssemblyTypeName: CaptainsDesk, Assembly-CSharp
+        m_MethodName: OpenEscapePod
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1058,7 +1180,7 @@ RectTransform:
   m_GameObject: {fileID: 6577220940165915319}
   m_LocalRotation: {x: 0.014312636, y: 0.0001326203, z: -0.00044138718, w: 0.9998975}
   m_LocalPosition: {x: 0, y: 0, z: -0.8}
-  m_LocalScale: {x: 0.03286355, y: 0.006152885, z: 0.022374285}
+  m_LocalScale: {x: 0.03286355, y: 0.0058327504, z: 0.022374285}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1631855744}
