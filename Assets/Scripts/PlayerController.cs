@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     
 
     private Transform startTransform;
-    private void Start(){        
+    private void Start(){     
     }
 
     // Update is called once per frame
@@ -32,9 +32,12 @@ public class PlayerController : MonoBehaviour
     }
 
     void FixedUpdate(){
-        PositionController();
         MovePlayer();
         RotatePlayer();
+        HeightController();
+        PositionController();
+        
+
         
     }
 
@@ -50,6 +53,7 @@ public class PlayerController : MonoBehaviour
             Vector3 direction = handPhysics.handCollider.transform.TransformDirection(input.axis.x,0,input.axis.y);
             rigidbody.AddForce(direction);
             
+            
         }       
     }
 
@@ -59,9 +63,11 @@ public class PlayerController : MonoBehaviour
     private void RotatePlayer(){
         if(turnRight.stateDown){
             rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,30,0);
+            //ResetPosition();
         }
         else if(turnLeft.stateDown){
             rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,-30,0);
+            //ResetPosition();
             //rigidbody.freezeRotation=false;
             
             //rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(0,45,0));
@@ -71,8 +77,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //moves collision Capsule with capsule that follows Hmd
-    private void PositionController()
+  
+    
+    //Sets height of Collision capsule to height of capsule that follows HMD
+    private void HeightController(){
+        
+        capsule.height = bodyCollider.height+0.25f;
+    }
+
+    private void PositionController(){
+        float diff = new Vector3(capsule.center.x - bodyCollider.transform.localPosition.x,0,capsule.center.z-bodyCollider.transform.localPosition.z).magnitude;
+        if(diff > 0.7) ResetPosition();
+    }
+
+    //resets collision Capsule to Position of capsule that follows the HMD
+    private void ResetPosition()
     {
 
         capsule.center = bodyCollider.transform.localPosition+ new Vector3(0,0.25f,0);
@@ -80,5 +99,4 @@ public class PlayerController : MonoBehaviour
 
         //capsule.radius = bodyCollider.radius;        
     }
-    
 }
