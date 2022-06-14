@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: image
       value: 
       objectReference: {fileID: 557085983}
+    - target: {fileID: 1626989233, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IsSolved
+      objectReference: {fileID: 0}
     - target: {fileID: 1934905367, guid: 26697f0b817696c4e8ebf27a80c023a9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 7.37
@@ -400,6 +404,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 671978007, guid: 37e2222f2aff5e643b82742cb010167c, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IsSolved
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37e2222f2aff5e643b82742cb010167c, type: 3}
 --- !u!114 &557085983 stripped
@@ -420,6 +428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2093017375, guid: 5af2d88040af3fb4cb020bc74f87414b, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IsSolved
+      objectReference: {fileID: 0}
     - target: {fileID: 1385515273558181851, guid: 5af2d88040af3fb4cb020bc74f87414b, type: 3}
       propertyPath: m_Name
       value: consoleWithInput

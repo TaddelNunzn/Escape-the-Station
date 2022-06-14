@@ -34,7 +34,6 @@ public class InputWords : MonoBehaviour
             }
             else{
                 passwordInput.text += symbol;
-                Debug.Log(passwordInput.text);
             }
         }
 
@@ -54,6 +53,7 @@ public class InputWords : MonoBehaviour
             //If the text in the Password TextMesh equals the password solved Event is called
             if(passwordInput.text.Equals(passwort)){
                 isSolved=true;
+                passwordInput.text = "Solved";
                 solved.Invoke();
             }
             //Else Screen gets reseted
@@ -71,7 +71,7 @@ public class InputWords : MonoBehaviour
     }
 
     //Default Funktion for Solved Event
-    public void rightAnswer(){
-        passwordInput.text = "Solved";
+    public void IsSolved(){
+        Debug.Log("Solved");
     }
 }

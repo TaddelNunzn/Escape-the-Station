@@ -38,7 +38,7 @@ public class CaptainsDesk : MonoBehaviour
         }
     }
 
-    public void isSolved(){
+    public void IsSolved(){
         Debug.Log("OPEN");
     }
 }

@@ -47,6 +47,7 @@ public class Tastenfeld : MonoBehaviour
 
                 //if input equals Solution Solved event is called
                 if(prev.Equals(""+solution)){
+                    textField.text = "Solved!";
                     solved.Invoke();
                 }else{
                     //else screen is reset
@@ -55,14 +56,13 @@ public class Tastenfeld : MonoBehaviour
                 }
                 break;
             default:
-                
                 break;
         }
     }
 
     //default for solved Event
-    public void rightAnswer(){
-        textField.text = "Solved!";
+    public void IsSolved(){
+        Debug.Log("Solved");
     }
 
     private void resetScreen(){
