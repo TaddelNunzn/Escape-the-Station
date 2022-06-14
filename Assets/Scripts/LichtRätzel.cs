@@ -8,6 +8,7 @@ public class LichtRätzel : MonoBehaviour
 {
     public GameObject button;
     public UnityEvent onPress;
+    public UnityEvent solved;
     //public UnityEvent onRelease;
     
     //AudioSource sound; // sound wird nicht gebraucht gerade
@@ -164,12 +165,9 @@ public class LichtRätzel : MonoBehaviour
         if(tmp == 0){
             tmp++;
             Lights1u2();
-            
-            Debug.Log(tmp);
         }else if(tmp==1){
             tmp--;
             Lights3u5();
-            Debug.Log(tmp);
         }         
     }
 
@@ -200,6 +198,7 @@ public class LichtRätzel : MonoBehaviour
     void Update() {
 
         if(on1 && on2 && on3 && on4 && on5){
+            solved.Invoke();
             tmp = 4;
         }
     }
