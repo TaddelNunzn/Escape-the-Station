@@ -20,6 +20,7 @@ public class InputWords : MonoBehaviour
         member.text = crewName;
         passwordInput.text = "Passwort";
         passwort = passwort.ToUpper();
+        Debug.Log(passwort);
     }
 
     // Update is called once per frame
@@ -37,6 +38,7 @@ public class InputWords : MonoBehaviour
             }
             else{
                 passwordInput.text += symbol;
+                Debug.Log(passwordInput.text);
             }
         }
 
@@ -49,6 +51,7 @@ public class InputWords : MonoBehaviour
     }
 
     public void Send(){
+        Debug.Log(passwordInput.text);
         if(passwordInput.text.Equals(passwort)){
             solved.Invoke();
         }

@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
     
 
     private Transform startTransform;
-    private void Start(){        
+    private void Start(){   
+        PositionController();     
     }
 
     // Update is called once per frame
@@ -32,7 +33,6 @@ public class PlayerController : MonoBehaviour
     }
 
     void FixedUpdate(){
-        PositionController();
         MovePlayer();
         RotatePlayer();
         
@@ -59,9 +59,11 @@ public class PlayerController : MonoBehaviour
     private void RotatePlayer(){
         if(turnRight.stateDown){
             rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,30,0);
+            PositionController();
         }
         else if(turnLeft.stateDown){
             rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,-30,0);
+            PositionController();
             //rigidbody.freezeRotation=false;
             
             //rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(0,45,0));
