@@ -7,6 +7,7 @@ public class ChangeTexture : MonoBehaviour
 {
 
 
+    public UnityEvent solved;
     bool wait = false;
     static bool doupdates = true;
     static bool finished = false;
@@ -34,8 +35,8 @@ public class ChangeTexture : MonoBehaviour
         if(count == 2140 && doupdates){
             m_renderer.material.SetTexture("_MainTex", finishtexture);
             finished = true;
-            Debug.Log("i update");
             Invoke("stopupdates", 0.01f);
+            solved.Invoke();
         }
     }
 
@@ -56,7 +57,6 @@ void setwait(){
 }
 void stopupdates(){
     doupdates = false;
-    Debug.Log("i stopped");
 }
  public void ChangeT1(int multi){
     if(count != 2140){
