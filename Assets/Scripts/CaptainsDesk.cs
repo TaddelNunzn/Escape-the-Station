@@ -9,6 +9,7 @@ public class CaptainsDesk : MonoBehaviour
 {
     public RenderTexture[] renderTextures;
     public TextMeshProUGUI button;
+    public Image image;
     public RawImage leftScreen,rightScreen;
     bool isOpen = false;
     public UnityEvent solved;
@@ -30,6 +31,7 @@ public class CaptainsDesk : MonoBehaviour
     public void OpenEscapePod(){
         if(!isOpen){
             button.text = "Escape Pod\nOpened";
+            image.color = new Color32(07C100);
             isOpen = true;
             leftScreen.texture = renderTextures[4];
             rightScreen.texture = renderTextures[4];
