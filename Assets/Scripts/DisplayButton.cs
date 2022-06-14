@@ -9,22 +9,14 @@ public class DisplayButton : MonoBehaviour
     public UnityEvent onPress;
     private bool wait = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //Called when hand touches Trigger
     private void OnTriggerEnter(Collider other)
     {
         if(!wait){
+            //Onpress event is Called
             onPress.Invoke();
             wait = true;
+            //Wait for .5 seconds to prevent button Spam
             Invoke("setwait", 0.5f);
         }
     }

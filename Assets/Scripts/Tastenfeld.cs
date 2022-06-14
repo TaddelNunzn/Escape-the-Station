@@ -14,23 +14,15 @@ public class Tastenfeld : MonoBehaviour
     public UnityEvent solved;
 
     public AudioSource wrong;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //text = gameObject.GetComponent<TMPro>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private string prev = "";
     private int stelle = 0;
 
+    //Called when Screen button is pressed
     public void press(TextMeshProUGUI input){
+        //gets input from TextMesh of button
         string number = input.text;
+        //Overwrites **** with symbol from Button. Digit is important
         switch(stelle){
             case 0:
                 textField.text = ""+number+"***";
@@ -48,12 +40,16 @@ public class Tastenfeld : MonoBehaviour
                 stelle ++;
                 break;
             case 3:
+                
                 textField.text=prev+number;
                 prev += number;
                 stelle ++;
+
+                //if input equals Solution Solved event is called
                 if(prev.Equals(""+solution)){
                     solved.Invoke();
                 }else{
+                    //else screen is reset
                     wrong.Play();
                     Invoke("resetScreen",1f);
                 }
@@ -61,23 +57,18 @@ public class Tastenfeld : MonoBehaviour
             default:
                 
                 break;
-        Debug.Log(textField.text);
         }
     }
 
+    //default for solved Event
     public void rightAnswer(){
         textField.text = "Solved!";
     }
 
     private void resetScreen(){
-        
+        //screen gets reset
         prev = "";
         textField.text="****";
         stelle = 0;
-    }
-
-
-    public void TestAktion(){
-        Debug.Log("Taste Gedrückt");    
     }
 }

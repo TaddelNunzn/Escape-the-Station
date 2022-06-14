@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3358696}
   - component: {fileID: 2345042}
   - component: {fileID: 6409752}
+  - component: {fileID: 671978007}
   m_Layer: 0
   m_Name: DeskWitInput
   m_TagString: Untagged
@@ -103,6 +104,38 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a0d8f320763fe4945b863868635a92f5, type: 3}
+--- !u!114 &671978007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0fd318f9c065349b9ff2fc1acdb66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewName: '{NoNameGiven}'
+  passwort: aaa
+  member: {fileID: 1242027431}
+  passwordInput: {fileID: 559154139}
+  sound: {fileID: 6368384649472437114}
+  solved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 671978007}
+        m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
+        m_MethodName: rightAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &32748035
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +342,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -563,7 +596,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -759,7 +792,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -878,7 +911,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -1267,7 +1300,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -1521,7 +1554,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -1640,7 +1673,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -1759,7 +1792,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -1878,7 +1911,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -1997,7 +2030,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -2116,7 +2149,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -2235,7 +2268,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -2354,7 +2387,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -2608,7 +2641,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -2821,9 +2854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Passwort
-
-'
+  m_text: Passwort
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3886,7 +3917,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -4005,7 +4036,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -4259,7 +4290,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -4513,7 +4544,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -4767,7 +4798,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -4886,7 +4917,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -5140,7 +5171,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -5394,7 +5425,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -5513,7 +5544,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -5632,7 +5663,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -5886,7 +5917,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -6005,7 +6036,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -6124,7 +6155,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -6378,7 +6409,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Send
         m_Mode: 1
@@ -6632,7 +6663,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -6751,7 +6782,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -7319,7 +7350,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -7672,7 +7703,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -7791,7 +7822,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -8876,7 +8907,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
@@ -9206,7 +9237,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -9739,7 +9770,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -9993,7 +10024,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -10255,7 +10286,6 @@ GameObject:
   - component: {fileID: 2012411690}
   - component: {fileID: 2012411689}
   - component: {fileID: 2012411688}
-  - component: {fileID: 2012411687}
   m_Layer: 5
   m_Name: InputField
   m_TagString: Untagged
@@ -10347,38 +10377,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2012411687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012411685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c0fd318f9c065349b9ff2fc1acdb66c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crewName: Amalia Mogus
-  passwort: s
-  member: {fileID: 1242027431}
-  passwordInput: {fileID: 559154139}
-  sound: {fileID: 6368384649472437114}
-  solved:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2012411687}
-        m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
-        m_MethodName: rightAnswer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2044330580
 GameObject:
   m_ObjectHideFlags: 0
@@ -10891,7 +10889,7 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012411687}
+      - m_Target: {fileID: 671978007}
         m_TargetAssemblyTypeName: InputWords, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 2
@@ -10947,7 +10945,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8062a1882de854546b37595f8e95d58d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
