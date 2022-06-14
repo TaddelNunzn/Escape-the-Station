@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
     //move Player with left stick and stop with buttons
     private void MovePlayer(){   
-        if(stop.state) rigidbody.AddForce(-rigidbody.velocity*5);
+        if(stop.state) rigidbody.AddForce(-rigidbody.velocity*10);
         else if(input.axis.magnitude > 0.1f){
             Vector3 direction = handPhysics.handCollider.transform.TransformDirection(input.axis.x,0,input.axis.y);
             rigidbody.AddForce(direction);

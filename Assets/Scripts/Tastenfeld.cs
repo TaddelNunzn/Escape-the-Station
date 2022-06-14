@@ -9,7 +9,7 @@ public class Tastenfeld : MonoBehaviour
     
     public TextMeshProUGUI textField;
      
-     [SerializeField] private int solution;
+     [SerializeField] private string solution;
 
     public UnityEvent solved;
 
@@ -29,7 +29,8 @@ public class Tastenfeld : MonoBehaviour
     private string prev = "";
     private int stelle = 0;
 
-    public void press(int number){
+    public void press(TextMeshProUGUI input){
+        string number = input.text;
         switch(stelle){
             case 0:
                 textField.text = ""+number+"***";
@@ -60,6 +61,7 @@ public class Tastenfeld : MonoBehaviour
             default:
                 
                 break;
+        Debug.Log(textField.text);
         }
     }
 
