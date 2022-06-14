@@ -12,7 +12,7 @@ public class ButtonLogic : MonoBehaviour
     
     //AudioSource sound; // sound wird nicht gebraucht gerade
     bool isPressed;
-    static bool open;
+    bool open;
 
     GameObject presser;
     public GameObject doorP1;

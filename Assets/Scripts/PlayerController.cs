@@ -62,12 +62,14 @@ public class PlayerController : MonoBehaviour
     //rotate Player with right Stick
     private void RotatePlayer(){
         if(turnRight.stateDown){
+            ResetPosition();
             rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,30,0);
-            //ResetPosition();
+            
         }
         else if(turnLeft.stateDown){
+            ResetPosition();
             rigidbody.transform.localRotation = rigidbody.transform.localRotation * Quaternion.Euler(0,-30,0);
-            //ResetPosition();
+            
             //rigidbody.freezeRotation=false;
             
             //rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(0,45,0));

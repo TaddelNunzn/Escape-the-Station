@@ -31,7 +31,7 @@ public class CaptainsDesk : MonoBehaviour
     public void OpenEscapePod(){
         if(!isOpen){
             button.text = "Escape Pod\nOpened";
-            image.color = new Color32(07C100);
+            //image.color = new Color32(07C100);
             isOpen = true;
             leftScreen.texture = renderTextures[4];
             rightScreen.texture = renderTextures[4];
