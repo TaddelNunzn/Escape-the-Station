@@ -7,44 +7,38 @@ public class BlinkingLight : MonoBehaviour
 {
    
     bool active = true;
-
-     public GameObject licht1;
-     public GameObject licht2;
-
-   private void Start(){    
-      //Neue prefabs auf inactive setzen
-
-          licht2.gameObject.SetActive(false);
-
-
-    }
-
-
-      public void ChangePrefabs1(){
-        if(active){
-
-        licht1.gameObject.SetActive(false);
-
-        licht2.gameObject.SetActive(true);
-      
-        }
-        Invoke("ChangePrefabs2", 1);
-        
-    }
-
-     public void ChangePrefabs2(){
-       if(active){
-
-        licht1.gameObject.SetActive(true);
-
-        licht2.gameObject.SetActive(false);
-      
-       }
-       Invoke("ChangePrefabs1", 1);
-    }
+    public Material green;
+    public Material red;
+    public Light lightsauce;
     
+    public GameObject light1;
+
+  void restartActive(){
+    active = true;
+    }
+
+  public void changeGreen(){
+  if(active){
+  lightsauce.color = (Color.green);
+  light1.GetComponent<MeshRenderer> ().material = green;
+  Invoke("changeRed", 1);
+  }
+  }
+
+  void changeRed(){
+  if (active){
+  lightsauce.color = (Color.red);
+  light1.GetComponent<MeshRenderer> ().material = red;
+  Invoke("changeGreen", 1);
+  }
+  }
+     
     public void StopChange(){
+      lightsauce.color = (Color.green);
+      light1.GetComponent<MeshRenderer> ().material = green;
       active=false;
+      Invoke("restartActive",25);
+      Invoke("changeRed",25);
     }
 
      
