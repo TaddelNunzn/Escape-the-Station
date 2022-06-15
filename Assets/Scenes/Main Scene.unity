@@ -654,6 +654,42 @@ PrefabInstance:
       propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 379344982}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6978296
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.11416591
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6978296
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.114165924
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 18.583
+      objectReference: {fileID: 0}
+    - target: {fileID: 613820876012251348, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 613820876269312626, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
       propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
