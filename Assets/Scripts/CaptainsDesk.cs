@@ -12,6 +12,9 @@ public class CaptainsDesk : MonoBehaviour
     public Image image;
     public RawImage leftScreen,rightScreen;
     bool isOpen = false;
+
+    bool wait = true;
+
     public UnityEvent solved;
     // Start is called before the first frame update
     void Start()
@@ -27,8 +30,17 @@ public class CaptainsDesk : MonoBehaviour
         }
     }
 
+    public void stopwait(){
+        Invoke("changewait",3);
+    }
+
+
+    void changewait(){
+        wait = false;
+    }
+
     public void OpenEscapePod(){
-        if(!isOpen){
+        if(!isOpen && !wait){
             button.text = "Escape Pod\nOpened";
             image.color = new Color32(7,193,0,255);
             isOpen = true;
