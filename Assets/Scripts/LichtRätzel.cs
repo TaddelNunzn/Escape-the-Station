@@ -15,6 +15,7 @@ public class LichtRätzel : MonoBehaviour
     
     //AudioSource sound; // sound wird nicht gebraucht gerade
 
+    bool invoked = false;
     public Material Material1;
     public Material Material2;
 
@@ -34,6 +35,10 @@ public class LichtRätzel : MonoBehaviour
     static bool on5 = false;
     int tmp = 0;
 
+
+void Start(){
+    solvedCheck();
+}
 
     private void OnTriggerEnter(Collider other) {
       
@@ -190,15 +195,21 @@ public class LichtRätzel : MonoBehaviour
         }  
     }
 
-
-
-    void Update() {
-
-        if(on1 && on2 && on3 && on4 && on5){
+    void solvedCheck(){
+        if(on1 && on2 && on3 && on4 && on5 && !invoked){
             solved.Invoke();
             tmp = 4;
+            invoked = true;
+        }
+        else if(!invoked){
+            Invoke("solvedCheck",0.1f);
         }
     }
+
+  
+
+
+    
 
     
  }

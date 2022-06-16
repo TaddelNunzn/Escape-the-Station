@@ -6,10 +6,9 @@ using UnityEngine.Events;
 public class ChangeTexture : MonoBehaviour
 {
 
-
+    bool invoked = false;
     public UnityEvent solved;
     bool wait = false;
-    static bool doupdates = true;
     static bool finished = false;
     static int count = 0;
     int current = 0;
@@ -29,16 +28,24 @@ public class ChangeTexture : MonoBehaviour
     void Start()
     {
         m_renderer = tochange.GetComponent<Renderer> ();
+        solvedCheck();
     }
 
-    void Update(){
-        if(count == 2140 && doupdates){
+
+ void solvedCheck(){
+        if(count == 2140 && !invoked){
+            invoked = true;
             m_renderer.material.SetTexture("_MainTex", finishtexture);
             finished = true;
-            Invoke("stopupdates", 0.01f);
             solved.Invoke();
+            
+        }
+        else if(!invoked){
+            Invoke("solvedCheck",0.1f);
         }
     }
+
+  
 
     private void OnTriggerEnter(Collider other) {
         if(!finished && !wait){
@@ -55,9 +62,7 @@ public class ChangeTexture : MonoBehaviour
 void setwait(){
     wait = false;
 }
-void stopupdates(){
-    doupdates = false;
-}
+
  public void ChangeT1(int multi){
     if(count != 2140){
     switch(current){
