@@ -6,13 +6,14 @@ using UnityEngine.Events;
 
 public class LichtRätzel : MonoBehaviour
 {
+
+    bool timeout = false;
     public GameObject button;
     public UnityEvent onPress;
     public UnityEvent solved;
     //public UnityEvent onRelease;
     
     //AudioSource sound; // sound wird nicht gebraucht gerade
-    bool isPressed;
 
     public Material Material1;
     public Material Material2;
@@ -34,28 +35,24 @@ public class LichtRätzel : MonoBehaviour
     int tmp = 0;
 
 
-    void Start()
-    {
-        isPressed = false; 
-    }
-
     private void OnTriggerEnter(Collider other) {
-        button.transform.localPosition = new Vector3(0, -0.005f, 0);
-        if (!isPressed ){
+      
+        if (!timeout){
+        
             presser = other.gameObject;
             onPress.Invoke();
             //sound.Play();
-            isPressed = true;
+            timeout = true;
+            Invoke("resetTimeout", 0.5f);
+       
             
         }
     }
 
-    private void OnTriggerExit(Collider other) {
-        if(other.gameObject == presser){
-            button.transform.localPosition = new Vector3(0, 0.003f, 0);
-            isPressed = false;
-        }
+    private void resetTimeout(){
+        timeout = false;
     }
+
 
 
 //if anweisungen für die Logic
