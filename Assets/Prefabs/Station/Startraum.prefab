@@ -12607,8 +12607,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 2596186265264926514}
     m_Modifications:
     - target: {fileID: 570993367270550759, guid: 516f6fdd3436d3047bb858f4a36d8399, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 570993367270550759, guid: 516f6fdd3436d3047bb858f4a36d8399, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 570993367270550759, guid: 516f6fdd3436d3047bb858f4a36d8399, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 570993367270550759, guid: 516f6fdd3436d3047bb858f4a36d8399, type: 3}
       propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 570993367270550759, guid: 516f6fdd3436d3047bb858f4a36d8399, type: 3}
+      propertyPath: onPress.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ButtonLogic, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 570993367585921426, guid: 516f6fdd3436d3047bb858f4a36d8399, type: 3}
       propertyPath: m_Name
