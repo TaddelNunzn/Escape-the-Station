@@ -18,5 +18,11 @@ public class GameEvents : MonoBehaviour
         Application.Quit(); 
         Debug.Log("Bye !");
     }
+
+    public void FinishGame()
+    {
+       SceneManager.LoadScene("End Scene"); 
+       Debug.Log("EndGame");
+    }
    
 }
