@@ -22,7 +22,7 @@ public class PlayEvent : MonoBehaviour
 
     public void playSoundAfter5(){
 
-        Invoke("playSound",5);
+        Invoke("playSound",4.5f);
 
         
     }
