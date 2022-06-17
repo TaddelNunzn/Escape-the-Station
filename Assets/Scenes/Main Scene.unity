@@ -530,7 +530,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161818948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2316,6 +2316,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 2.16
       objectReference: {fileID: 0}
+    - target: {fileID: 7901761692763270856, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: wrong
+      value: 
+      objectReference: {fileID: 1553693656}
+    - target: {fileID: 7901761692763270856, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901761692763270856, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1679046805}
+    - target: {fileID: 7901761692763270856, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901761692763270856, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901761692763270856, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8500319232371690057, guid: 012475d1f9d2ca446b2b8fd76d232786, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3892,6 +3916,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bf1464b84bb76b44abb088d5a41acfee, type: 2}
+    - target: {fileID: 7696352128119400518, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+      propertyPath: wrong
+      value: 
+      objectReference: {fileID: 1553693656}
+    - target: {fileID: 7696352128119400518, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696352128119400518, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1679046805}
+    - target: {fileID: 7696352128119400518, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696352128119400518, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696352128119400518, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8421741900712063242, guid: 61f18a583d7bfb9428707d2fcf66cf66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5892,6 +5940,30 @@ PrefabInstance:
     - target: {fileID: 5197188936498619494, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 2.927
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453529769014961750, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
+      propertyPath: wrong
+      value: 
+      objectReference: {fileID: 1553693656}
+    - target: {fileID: 5453529769014961750, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453529769014961750, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1679046805}
+    - target: {fileID: 5453529769014961750, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453529769014961750, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453529769014961750, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
+      propertyPath: solved.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7749462416454786778, guid: 700fc4d6ad0997d4db21f69255db9e49, type: 3}
       propertyPath: m_Materials.Array.data[0]
