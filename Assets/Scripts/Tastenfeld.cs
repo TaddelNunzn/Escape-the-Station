@@ -8,6 +8,8 @@ public class Tastenfeld : MonoBehaviour
 {
     
     public TextMeshProUGUI textField;
+
+    bool timeout = false;
      
      [SerializeField] private string solution;
 
@@ -20,6 +22,7 @@ public class Tastenfeld : MonoBehaviour
 
     //Called when Screen button is pressed
     public void press(TextMeshProUGUI input){
+        if(!timeout){
         //gets input from TextMesh of button
         string number = input.text;
         //Overwrites **** with symbol from Button. Digit is important
@@ -58,8 +61,16 @@ public class Tastenfeld : MonoBehaviour
             default:
                 break;
         }
+        timeout = true;
+        Invoke("resetTimeout",0.3f);
+
+        }
     }
 
+
+    void resetTimeout(){
+        timeout = false;
+    }
     //default for solved Event
     public void IsSolved(){
         Debug.Log("Solved");

@@ -26,7 +26,6 @@ public class ChangeGameObject : MonoBehaviour
       for(int i=0; i<prefabold.Length; i++){
         prefabold[i].gameObject.SetActive(false);
       }
-  
         //Neue prefabs auf active setzen
         for(int i=0; i<prefabnew.Length; i++){
         prefabnew[i].gameObject.SetActive(true);
@@ -35,5 +34,8 @@ public class ChangeGameObject : MonoBehaviour
         }
     }
 
+          public void ChangePrefabsafterDelay(){
+          Invoke("ChangePrefabs",5.1f);
+    }
      
 }
