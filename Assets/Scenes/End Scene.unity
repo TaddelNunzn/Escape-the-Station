@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5108634225244757806, guid: fb31cec5733383345bafa91ccaf2f07b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e82d5e28e42bb2c428b6cb4373d309dc, type: 2}
     - target: {fileID: 5642935714637094749, guid: fb31cec5733383345bafa91ccaf2f07b, type: 3}
       propertyPath: m_text
       value: "Restart \nLevel 1"

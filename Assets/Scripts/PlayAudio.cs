@@ -10,7 +10,7 @@ public class PlayAudio : MonoBehaviour
    
    bool playable = true;
     public UnityEvent onPress;
-    public AudioSource audio;
+    public AudioSource audioo;
 
    private void OnTriggerEnter(Collider other) {
         onPress.Invoke();
@@ -24,7 +24,7 @@ public class PlayAudio : MonoBehaviour
 
     public void playAudio(){
         if(playable){
-        audio.Play();
+        audioo.Play();
         playable = false;
         Invoke("restartPlayable", 25);
         }
