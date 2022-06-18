@@ -5,7 +5,8 @@ using TMPro;
 using UnityEngine.Events;
 
 public class InputWords : MonoBehaviour
-{
+{   
+    bool timeout = false;
     public string crewName;
     public string passwort;
     public TextMeshProUGUI member;
@@ -25,7 +26,7 @@ public class InputWords : MonoBehaviour
 
     //Called, when a Input button is pressed
     public void Input(TextMeshProUGUI letter){
-        if(!isSolved)
+        if(!isSolved && !timeout)
         {   
             //add the Symbol of the Input Button to the Text in the Password TextMesh
             string symbol = letter.text;
@@ -35,8 +36,14 @@ public class InputWords : MonoBehaviour
             else{
                 passwordInput.text += symbol;
             }
+            timeout = true;
+            Invoke("resetTimeout",0.3f);
         }
 
+    }
+
+    void resetTimeout(){
+        timeout = false;
     }
 
     //Called when the Back button is pressed
