@@ -115,6 +115,9 @@ namespace Valve.VR
         /// <summary>Returns whether this action is bound and the action set is active</summary>
         public bool isActive { get { return skeletonAction.GetActive(); } }
 
+        void Start(){
+            //mirroring = MirrorType.None;
+        }
 
         /// <summary>An array of five 0-1 values representing how curled a finger is. 0 being straight, 1 being fully curled. 0 being thumb, 4 being pinky</summary>
         public float[] fingerCurls
